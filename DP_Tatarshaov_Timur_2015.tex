@@ -38,7 +38,7 @@
 \authorWithDegrees{Ing. Timur Tatarshaov} %author's name with academic degrees
 \supervisor{Ing. Josef Gattermayer}
 \acknowledgements{I would like to thank my lovely family especially my parents, who made their best to grow me up and gave me a chance to be here and get hight level university degree in Czech Republic. Without their efforts I wouldn't be able to be who I am and where I am. Also I would like to thank people that were close to me throughout my life, all of them made an impact on my being and made changes to my personality.}
-\abstractEN{The aim of the thesis is to develop a mobile application that will store points of interests to a server backend. Single points of interests will be shared among users.}
+\abstractEN{The aim of the thesis is to develop a mobile application that will store points of interests to a server back end. Single points of interests will be shared among users.}
 \abstractCS{C{\' i}lem diplomov{\' e} pr{\' a}ci je vypracovat mobiln{\' i} aplikaci kter{\' a} bude ukl{\' a}dat body na server. Bod se m{\. u}{\v z}e p{\v r}en{\' a}{\v s}et mezi u{\v z}ivateli.}
 \placeForDeclarationOfAuthenticity{Prague}
 \keywordsCS{Geolokace, navigace, mobilní aplikace, API}
@@ -352,7 +352,7 @@ MySQL is a free DBMS. MySQL is a property of Oracle Corporation since Sun Micros
 
 MySQL is a good solution for small and medium applications. Usually MySQL is used as a server to which local and remote clients connect but also in distributive included solution for embedding databases into applications.
 
-Flexibility of DBMS is enabled by support of relatively wide amount of storage engines: MyISAM that supports fulltext search as well as InnoDB that supports transactions on a level of separate records. Because of open architecture and GPL license new types of storage engines appear.
+Flexibility of DBMS is enabled by support of relatively wide amount of storage engines: MyISAM that supports full text search as well as InnoDB that supports transactions on a level of separate records. Because of open architecture and GPL license new types of storage engines appear.
 
 \subsubsection{Redis}
 
@@ -363,7 +363,7 @@ NoSQL databases rely on BASE paradigm. That means storage is Basically Available
 
 \subsubsection{MongoDB}
 
-MongoDB is document driven schemaless database system. As Redis MongoDB is a NoSQL DBMS, which means it doesn't support SQL queries. But in contrast to Redis MongoDB is not a key-value store, it supports simple and complex querying based on comparison of querying statements to stored data.
+MongoDB is document driven schema less database system. As Redis MongoDB is a NoSQL DBMS, which means it doesn't support SQL queries. But in contrast to Redis MongoDB is not a key-value store, it supports simple and complex querying based on comparison of querying statements to stored data.
 
 MongoDB is released under open source license. DBMS supports replication for data protection in case of emergency. 
 In addition MongoDB supports one special kind of index that don't support mentioned kinds of databases out of the box. That special index related to approximate querying of geolocation data and called 2D index. It allows to find records that contain position information in two-dimension space near given position with some approximation faster than just calculating difference with come other tools.
@@ -373,7 +373,7 @@ Relational SQL solutions such as MySQL and Oracle supports complicate relations 
 Those kinds of databases are suitable for complex data relations storage.
 Mostly Relational databases comply with ACID principle.
 
-Relational databases usually require strong schemas of stored data to be able to make relations determinant and query relational data properly.
+Relational databases usually require strong schemes of stored data to be able to make relations determinant and query relational data properly.
 Usually provides solutions for scalability and recovery from errors as MySQL and Postgre
 
 NoSQL databases relies on BASE paradigm. That means storage is Basically Available Soft-state and Eventual consistent. Those kind of databases puts Availability on the first place.
@@ -430,9 +430,9 @@ One of the biggest sites that use PHP are Facebook, Wikipedia, VK.
 
 \subsubsection{Python}
 
-Python is a high-level programming language of general purpose. Python phylosophy emphasizes code readability and minimization, syntax allows developers to use fewer lines of code for the simillar tasks compared Java or PHP. 
+Python is a high-level programming language of general purpose. Python philosophy emphasizes code readability and minimization, syntax allows developers to use fewer lines of code for the similar tasks compared Java or PHP. 
 
-Python supports multiple programming paradigms, including object-oriented, imperative and functional programming. Python applications run using Python interpreters which are available for many operating systems. Python runs on server by use of Python interpretator and Web Server such as Apache.
+Python supports multiple programming paradigms, including object-oriented, imperative and functional programming. Python applications run using Python interpreters which are available for many operating systems. Python runs on server by use of Python interpreter and Web Server such as Apache.
 
 Python first appeared in 1991 and wasn't designed to implement web applications. There are number of frameworks such as Django and Flask developed for Python, they enables developers to implement web-based applications and services easily and enables to use extra functionality for handling databases, authorization and authentication, encryption and so on easily.
 
@@ -811,13 +811,13 @@ Dependences mentioned in respected section automatically downloaded and included
 
 \section{Deployment and isolation}
 
-Application is stated to be scalable and easy to be deployed. That requirement comply with principle of microservices architecture. Such an architecture takes care of libraries environment required software versioning and separate component isolation and independance of those requirements.
+Application is stated to be scalable and easy to be deployed. That requirement comply with principle of micro-services architecture. Such an architecture takes care of libraries environment required software versioning and separate component isolation and independence of those requirements.
 
 That principle from development to production mirrors how cargo was shipped prior to the invention of intermodal shipping containers. At the origin, cargo was manually loaded one piece at a time onto the truck or train that carried it to the port. At the port of origin the cargo was unloaded onto the dock.
 
 Containerization dramatically changed the ship. All non-bulk cargo is now packed into standard shipping containers, which can be carried by truck, trains and ships. The contents of the container are never touched in transit. In other words, the shipping container encapsulates it’s contents. It has become the standardized API of cargo.
 
-One of the solutions of the containerization principle in software is Docker. Docker is a new way to containerize applications that is becomingly increasingly popular. It allows you to package a microservice in a standardized portable format that’s independent of the technology used to implement the service. At runtime it provides a high degree of isolation between different services.
+One of the solutions of the containerization principle in software is Docker. Docker is a new way to containerize applications that is becomingly increasingly popular. It allows you to package a micro-service in a standardized portable format that’s independent of the technology used to implement the service. At runtime it provides a high degree of isolation between different services.
 
 Docker runs natively on Linux with kernel 3.10 or higher which is used as production environment for this project.
 
@@ -885,7 +885,7 @@ That's why firstly wireframes of mobile application have been developed. They do
 
 After detailed sketching of application interface it could be implemented in colors or in interface builder of development environment.
 
-Following screenshots are actual images of the interfaces of the application.
+Following screen-shots are actual images of the interfaces of the application.
 
 \clearpage
 
@@ -1271,7 +1271,7 @@ Use of the system is simple and intuitive. Implemented software solution can be 
 \chapter{Terminology}
 % \printglossaries
 \begin{description}
-	\item[User] User of mobile aplication holder and creator
+	\item[User] User of mobile application holder and creator
 	\item[Point of interest, Place] Data created by user and belonged to him, object of management using API
 	\item[Client] Mobile device, property of user. Consumer of API. User interacts with API by means of the client
 	\item[Server] Remote machine providing API entry point and API implementation. Includes set of technologies e.g. operation system, network stack, database to let API implementation work properly.
